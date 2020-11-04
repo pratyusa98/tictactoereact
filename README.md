@@ -2,3 +2,5 @@
 
 Link http://praty.surge.sh/
 
+https://surge.sh/
+
