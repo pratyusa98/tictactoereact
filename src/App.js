@@ -4,6 +4,8 @@ import { calculateWinner } from "./helpers"
 
 import "./styles/root.scss"
 
+
+
 const App = () => {
 
   const [board,setBoard] = useState( Array(9).fill(null) );
@@ -12,7 +14,7 @@ const App = () => {
   
   const winner = calculateWinner(board)
 
-  const message = winner ? `Winner Is ${winner}` : `Next Player is ${isXNext ? 'X' : 'O' }`
+  const message = winner ? `Winner Is ${winner}` :  `Next Player is ${ isXNext ? 'X' : 'O' }`
 
   console.log(winner)
 
@@ -38,10 +40,14 @@ const App = () => {
 
     }
 
+   
+
+ 
  return (<div className="app">
     <h1>Tic Tac Toe!</h1>
   <h2>{ message }</h2>
     <Board board={board} handleSquaredClick={handleSquaredClick} />
+    <button type="button" >Start New Game</button>
   </div>
  );
 };
