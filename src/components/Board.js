@@ -26,15 +26,15 @@ const Board = ({board,handleSquaredClick}) => {
 
             </div>
             <div className="board-row">
+            { renderSquare(3) }
             { renderSquare(4) }
             { renderSquare(5) }
-            { renderSquare(6) }
             </div>
 
             <div className="board-row">
+            { renderSquare(6) }
             { renderSquare(7) }
             { renderSquare(8) }
-            { renderSquare(9) }
             </div>
             
         </div>
